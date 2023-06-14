@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sigmar+One&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #25316D;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Sigmar One', cursive;
+}
+
+.subtitulo {
+    color: white;
+    font-size: 22px;
+    font-family: 'Sigmar One', cursive;
+}
+
+.tarjetas, .tarjetas-ataque {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta-de-mokepon {
+    width: 200px;
+    height: 100px;
+    background: #5F6F94;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #97D2EC;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: beige;
+    border: 2px solid aliceblue;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label{
+    background-color: red;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #5F6F94;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid red;
+    width: 250px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes {
+    width: 300px;
+    background-color: #3C84AB;
+    border: 2px solid aliceblue;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton-reinicio {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: beige;
+    border: 2px solid aliceblue;
+    color: green;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataque {
+        flex-direction: column;
+    }
+}
